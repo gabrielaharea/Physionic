@@ -1,4 +1,3 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import { CardActionArea } from "@mui/material";
@@ -11,9 +10,22 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import CardMedia from "@mui/material/CardMedia";
 import Paper from "@mui/material/Paper";
+import React , {FC, useState} from 'react';
 
-export default function BasicCard() {
+export type Props = {
+  width: string;
+  height: string;
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+};
+
+export const BasicCard: React.FC<Props> = ({width, height, src, alt, title, description }) => {
+  const [redMore, setReadMore] = useState(false);
+
   return (
+  <>
     <Card>
       <Box
         sx={{
@@ -21,7 +33,7 @@ export default function BasicCard() {
           "& > :not(style)": {
             m: 1,
             width: 328,
-            height: 253,
+            height: 250,
           },
         }}
       >
@@ -78,5 +90,6 @@ export default function BasicCard() {
         </Paper>
       </Box>
     </Card>
+    </>
   );
-}
+};

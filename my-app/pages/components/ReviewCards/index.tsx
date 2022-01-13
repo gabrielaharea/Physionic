@@ -15,7 +15,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Paper from "@mui/material/Paper";
 import { FC, useState } from "react";
 import * as React from "react";
-import Stack from '@mui/material/Stack';
+import Stack from "@mui/material/Stack";
+import Rating from '@mui/material/Rating';
+import BasicRating from "../Rating";
+
 
 export const CardRewiew: React.FC<Props> = ({
   width,
@@ -23,29 +26,21 @@ export const CardRewiew: React.FC<Props> = ({
   src,
   alt,
   title,
-  descriptionOne,
-  descriptionTwo,
-  descriptionThree,
-  descriptionFour,
-  descriptionFive,
+  description,
 }) => {
   return (
     <>
-    <Card>
-      <Box>
-        <Paper>
-         <Typography>
+      <Card>
+        <Box>
+          <Paper>
+            <BasicRating />
+            <Typography>{description}</Typography>
+            <Avatar alt="foto-people" src="/img/#user.1.jpg" />
+          </Paper>
+        </Box>
+      </Card>
+    </>
+  );
+};
 
-         </Typography>
-         <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        </Paper>
-      </Box>
-    </Card>
-    </> 
-    );
-  };
-
-  export default CardRewiew;
-
-
-
+export default CardRewiew;

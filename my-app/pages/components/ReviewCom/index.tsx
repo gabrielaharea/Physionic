@@ -1,14 +1,13 @@
 import Paragraf from "../Paragraf";
-import CardMUI from "../CardBlue";
+import CardRewiew from "../ReviewCom";
 import React from "react";
 
 const RewiewPages = () => {
   return (
     <div>
       <Paragraf />
-      <CardMUI title="Emergency Case" />
-      <CardMUI title="Cancer Care" />
-      <CardMUI title="Health Queries" />
+      <CardRewiew
+        description="Slate helps you see how many more days you need to work to reach your financial goal."/>
     </div>
   );
 };

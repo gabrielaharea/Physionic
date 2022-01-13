@@ -10,22 +10,12 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import CardMedia from "@mui/material/CardMedia";
 import Paper from "@mui/material/Paper";
-import React , {FC, useState} from 'react';
+import {FC, useState} from 'react';
+import * as React from "react";
 
-export type Props = {
-  width: string;
-  height: string;
-  src: string;
-  alt: string;
-  title: string;
-  description: string;
-};
 
-export const BasicCard: React.FC<Props> = ({width, height, src, alt, title, description }) => {
-  const [redMore, setReadMore] = useState(false);
-
+export default function BasicCard () {
   return (
-  <>
     <Card>
       <Box
         sx={{
@@ -90,6 +80,5 @@ export const BasicCard: React.FC<Props> = ({width, height, src, alt, title, desc
         </Paper>
       </Box>
     </Card>
-    </>
   );
 };

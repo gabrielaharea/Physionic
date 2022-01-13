@@ -4,9 +4,5 @@ export type Props = {
   src: string;
   alt: string;
   title: string;
-  descriptionOne: string;
-  descriptionTwo: string;
-  descriptionThree: string;
-  descriptionFour: string;
-  descriptionFive: string;
+  description: string;
 };

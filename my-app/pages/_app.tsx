@@ -8,7 +8,7 @@ import { CacheProvider } from "@emotion/react";
 import { EmotionCache } from "@emotion/cache";
 import { theme } from "./theme";
 import HomePage from "./components/HomeHero";
-import CardTwo from "./components/Card2";
+import Card2 from "./components/Card2";
 import RewiewPages from "./components/ReviewCom"
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -37,7 +37,7 @@ const App: FC<MyAppProps> = ({
         ></link>
       </Head>
       <HomePage />
-      <CardTwo />
+      <Card2 />
       <RewiewPages />
     </div>
   );

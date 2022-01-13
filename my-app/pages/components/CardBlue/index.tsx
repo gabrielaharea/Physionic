@@ -41,7 +41,7 @@ export const CardMUI: React.FC<Props> = ({
             },
           }}
         >
-          <Paper variant="outlined">
+          <Paper elevation={0}>
             <Typography
               gutterBottom
               variant="h5"

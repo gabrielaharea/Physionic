@@ -1,4 +1,4 @@
-import Paragraf from "../Paragraf";
+import { ParagrafProps } from "../Paragraf/index";
 import CardMUI from "../CardBlue";
 import React from "react";
 import Grid from "@mui/material/Grid";
@@ -34,7 +34,10 @@ const Card2 = [
 export default function Card2Component() {
   return (
     <Box p={9}>
-      <Paragraf />
+      <ParagrafProps
+        title="Leading Medicine"
+        description="Problems trying to resolve the conflict between the two major"
+      />
       <Grid container spacing={5}>
         {Card2.map((Card2, i) => {
           return (
@@ -47,4 +50,3 @@ export default function Card2Component() {
     </Box>
   );
 }
-

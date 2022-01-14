@@ -1,4 +1,4 @@
-import Paragraf from "../Paragraf";
+import { ParagrafProps } from "../Paragraf/index";
 import { FaqBoxCard } from "../FaqBoxCard";
 import React from "react";
 import Grid from "@mui/material/Grid";
@@ -46,7 +46,10 @@ const FaqText = [
 export default function FaqBox() {
   return (
     <Box p={9}>
-      <Paragraf />
+      <ParagrafProps
+        title="FAQ"
+        description="Problems trying to resolve the conflict between the two major"
+      />
       <Grid container spacing={5}>
         {FaqText.map((FaqText, i) => {
           return (

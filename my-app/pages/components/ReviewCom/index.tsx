@@ -1,5 +1,5 @@
-import Paragraf from "../Paragraf";
 import { ReviewCards } from "../ReviewCards";
+import { ParagrafProps } from "../Paragraf/index";
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -21,8 +21,11 @@ const RewiewPages = [
 
 export default function CardsRewiewPages() {
   return (
-    <Box p={9}>
-      <Paragraf />
+    <Box p={12}>
+      <ParagrafProps
+        title="Leading Medicine"
+        description="Problems trying to resolve the conflict between the two major"
+      />
       <Grid container spacing={5}>
         {RewiewPages.map((RewiewPages, i) => {
           return (

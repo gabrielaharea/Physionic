@@ -10,6 +10,7 @@ import { theme } from "./theme";
 import HomePage from "./components/HomeHero";
 import Card2 from "./components/Card2";
 import RewiewPages from "./components/ReviewCom"
+import FaqText from "./components/FaqBox"
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -39,6 +40,7 @@ const App: FC<MyAppProps> = ({
       <HomePage />
       <Card2 />
       <RewiewPages />
+      <FaqText />
     </div>
   );
 };

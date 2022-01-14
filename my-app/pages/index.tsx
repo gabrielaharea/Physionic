@@ -17,9 +17,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Meet the Best Hospital" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
     </div>
   );
 };

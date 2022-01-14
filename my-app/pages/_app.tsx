@@ -11,7 +11,7 @@ import HomePage from "./components/HomeHero";
 import Card2 from "./components/Card2";
 import RewiewPages from "./components/ReviewCom";
 import FaqText from "./components/FaqBox";
-import { ThemeProvider } from "@mui/private-theming";
+import { ThemeProvider } from "@emotion/react";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

@@ -11,8 +11,8 @@ export const ButHome = styled.div`
   border-radius: 5px;
   padding: 15px 25px;
   margin: 0px 45px;
-
 }
+
 `;
 
 

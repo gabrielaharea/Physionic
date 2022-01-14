@@ -46,7 +46,7 @@ export const CardMUI: React.FC<Props> = ({
               gutterBottom
               variant="h5"
               component="div"
-              sx={{ fontSize: 16 }}
+              sx={{ fontSize: 16 , textAlign: 'center' }}
             >
               {title}
             </Typography>

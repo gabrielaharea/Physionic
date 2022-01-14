@@ -2,15 +2,16 @@ import "../styles/globals.css";
 import React, { useEffect, FC } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import { CssBaseline, makeStyles, ThemeProvider } from "@mui/material";
+import { CssBaseline, makeStyles } from "@mui/material";
 import createEmotionCache from "./createEmotionCache";
 import { CacheProvider } from "@emotion/react";
 import { EmotionCache } from "@emotion/cache";
 import { theme } from "./theme";
 import HomePage from "./components/HomeHero";
 import Card2 from "./components/Card2";
-import RewiewPages from "./components/ReviewCom"
-import FaqText from "./components/FaqBox"
+import RewiewPages from "./components/ReviewCom";
+import FaqText from "./components/FaqBox";
+import { ThemeProvider } from "@mui/private-theming";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -32,15 +33,13 @@ const App: FC<MyAppProps> = ({
         <title>Physionic</title>
         <meta name="description" content="Meet the Best Hospital" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
-      <HomePage />
-      <Card2 />
-      <RewiewPages />
-      <FaqText />
+      <ThemeProvider theme={theme}>
+        <HomePage />
+        <Card2 />
+        <RewiewPages />
+        <FaqText />
+      </ThemeProvider>
     </div>
   );
 };

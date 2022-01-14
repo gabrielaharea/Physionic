@@ -21,8 +21,8 @@ export const ParagrafProps: React.FC<Props> = ({
   return (
     <>
       <div>
-        <Typography variant="h2">{title}</Typography>
-        <Typography variant="body1">{description}</Typography>
+        <Typography variant="h2" sx={{ textAlign: 'center',fontWeight: 700 }}>{title}</Typography>
+        <Typography variant="body1" sx={{ textAlign: 'center', fontWeight: 500 }}>{description}</Typography>
       </div>
     </>
   );

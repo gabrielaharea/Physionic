@@ -1,6 +1,9 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import ButtonS from "./styled"
+import * as S from "./styled"; 
+
 
 const InfoHome = () => {
   return (
@@ -18,8 +21,10 @@ const InfoHome = () => {
       <h4>
         We know how large objects will act, <br /> but things on a small scale.
       </h4>
-      <Button>Get Quote How</Button>
-      <Button>Learn More</Button>
+      <Button variant="contained">Get Quote How</Button>
+      <Button sx={{ color: "primary.contrastText" }} variant="outlined">
+        Learn More
+      </Button>
     </Box>
   );
 };

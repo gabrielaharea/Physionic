@@ -1,7 +1,8 @@
 import { Button } from "@mui/material";
 import * as S from "./styled";
 import { Stack } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
+// import SendIcon from "@mui/icons-material/Send";
+import React from "react";
 
 export const ButtonHome = () => {
   return (

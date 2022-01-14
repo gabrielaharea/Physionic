@@ -20,7 +20,7 @@ export const theme = createTheme({
   },
   
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: '"Montserrat", sans-serif'
   },
 }
 );

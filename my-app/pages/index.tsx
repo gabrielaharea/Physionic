@@ -6,8 +6,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import App from "./_app";
 import HomePage from "./components/HomeHero";
-import { theme } from "./theme";
-import { ThemeProvider } from "@emotion/react";
+
 
 const Home: NextPage = () => {
   return (

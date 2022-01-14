@@ -25,16 +25,21 @@ export const Form = () => {
   return (
     <div className="auth-form">
       <Paper
+        elevation={0}
+        variant="outlined"
         sx={{
           width: "20rem",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           padding: "2rem",
+          borderRadius: "10px",
         }}
       >
-        <h3 className="text-appointment">Book Appointment</h3>
-
+        {" "}
+        <FormLabelStyled>
+          <h3 className="text-appointment">Book Appointment</h3>
+        </FormLabelStyled>
         <FormControl>
           <S.InputWrapper>
             <div>

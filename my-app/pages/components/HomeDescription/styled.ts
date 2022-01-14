@@ -1,9 +1,19 @@
 import styled from "@emotion/styled";
-import {Select as MuiSelect} from "@mui/material";
-import {FC} from 'react';
+ 
 
-
-const ButtonS = styled.button`
-background-color: blue;
+export const ButtonStyle = styled.div`
+   .MuiButton-root{
+     	border-radius: 37px;
+      font-size: 14px;
+      padding: 15px 36px;
+      margin: 5px;
+  }
 `;
+      
+
+
+
+
+
+
 

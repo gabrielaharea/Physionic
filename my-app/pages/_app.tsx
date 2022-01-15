@@ -12,6 +12,7 @@ import Card2 from "./components/Card2";
 import RewiewPages from "./components/ReviewCom";
 import FaqText from "./components/FaqBox";
 import { ThemeProvider } from "@emotion/react";
+import PricingBox from "./components/PricingBox";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -39,6 +40,7 @@ const App: FC<MyAppProps> = ({
         <Card2 />
         <RewiewPages />
         <FaqText />
+        <PricingBox />
       </ThemeProvider>
     </div>
   );

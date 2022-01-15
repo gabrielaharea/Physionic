@@ -3,6 +3,8 @@ import CardMUI from "../CardBlue";
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import { BoxStyled } from "./styled";
+import { Container } from "@mui/material";
 
 const Card2 = [
   {
@@ -33,20 +35,22 @@ const Card2 = [
 
 export default function Card2Component() {
   return (
-    <Box p={9}>
-      <ParagrafProps
-        title="Leading Medicine"
-        description="Problems trying to resolve the conflict between the two major"
-      />
-      <Grid container spacing={5}>
-        {Card2.map((Card2, i) => {
-          return (
-            <Grid key={i} item>
-              <CardMUI {...Card2} />
-            </Grid>
-          );
-        })}
-      </Grid>
-    </Box>
+    <BoxStyled>
+      <Container>
+        <ParagrafProps
+          title="Leading Medicine"
+          description="Problems trying to resolve the conflict between the two major realms of Classical physics: Newtoniam mechanics"
+        />
+        <Grid container spacing={5}>
+          {Card2.map((Card2, i) => {
+            return (
+              <Grid key={i} item>
+                <CardMUI {...Card2} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Container>
+    </BoxStyled>
   );
 }

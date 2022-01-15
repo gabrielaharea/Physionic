@@ -48,7 +48,7 @@ export default function FaqBox() {
     <Box p={9}>
       <ParagrafProps
         title="FAQ"
-        description="Problems trying to resolve the conflict between the two major"
+        description="Problems trying to resolve the conflict between the two major realms of Classical physics: Newtoniam mechanics"
       />
       <Grid container spacing={5}>
         {FaqText.map((FaqText, i) => {

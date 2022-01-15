@@ -24,7 +24,7 @@ export default function CardsRewiewPages() {
     <Box p={12}>
       <ParagrafProps
         title="Leading Medicine"
-        description="Problems trying to resolve the conflict between the two major"
+        description="Problems trying to resolve the conflict between the two major realms of Classical physics: Newtoniam mechanics"
       />
       <Grid container spacing={5}>
         {RewiewPages.map((RewiewPages, i) => {

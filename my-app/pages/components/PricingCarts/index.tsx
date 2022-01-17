@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import { Props } from "./propsCard";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import { FC, useState } from "react";
@@ -8,18 +7,16 @@ import * as React from "react";
 import { Button } from "@mui/material";
 
 type Props = {
-   title: string;
-   description: string;
-   item1: string;
-   item2: string;
-   item3: string;
-   item4: string;
-   item5: string;
+  title: string;
+  description: string;
+  item1: string;
+  item2: string;
+  item3: string;
+  item4: string;
+  item5: string;
+};
 
-   
-}
-
-export const PricingCarts: React.FC<Props> = ({
+export const PricingCarts: FC<Props> = ({
   title,
   description,
   item1,
@@ -27,7 +24,6 @@ export const PricingCarts: React.FC<Props> = ({
   item3,
   item4,
   item5,
-
 }) => {
   return (
     <>

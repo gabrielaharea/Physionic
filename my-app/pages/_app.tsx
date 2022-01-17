@@ -13,10 +13,10 @@ import RewiewPages from "./components/ReviewCom";
 import FaqText from "./components/FaqBox";
 import { ThemeProvider } from "@emotion/react";
 import PricingBox from "./components/PricingBox";
+import Subscribe from "./components/Subscribe";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
-
 interface MyAppProps extends AppProps {
   // eslint-disable-next-line react/require-default-props
   emotionCache?: EmotionCache;
@@ -41,6 +41,7 @@ const App: FC<MyAppProps> = ({
         <RewiewPages />
         <FaqText />
         <PricingBox />
+        <Subscribe />
       </ThemeProvider>
     </div>
   );
